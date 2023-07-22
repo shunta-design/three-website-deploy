@@ -1,5 +1,6 @@
 import "./style.css";
 import * as THREE from "three";
+import spaceBG from "./bg/bg.jpg";
 
 // canvas
 const canvas = document.querySelector("#webgl");
@@ -9,7 +10,7 @@ const scene = new THREE.Scene();
 
 // backgrount texture
 const textureLorder = new THREE.TextureLoader();
-const bgTexture = textureLorder.load("./bg/bg.jpg");
+const bgTexture = textureLorder.load(spaceBG);
 scene.background = bgTexture;
 
 // size
